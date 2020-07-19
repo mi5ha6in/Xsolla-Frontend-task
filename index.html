@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xsolla Summer School</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+  <div class="page__wrapper">
+    <main>
+      <section class="events">
+        <h1 class="events__header">Event Listing</h1>
+
+        <div class="events__search search">
+
+          <div class="search__item">
+            <label class="search__lable" for="city">City:</label>
+            <select class="search__select" name="city" id="city">
+              <option value="All">All</option>
+            </select>
+          </div>
+
+          <div class="search__item">
+            <label class="search__lable" for="month">Month:</label>
+            <select class="search__select" name="month" id="month">
+              <option value="All">All</option>
+            </select>
+          </div>
+
+        </div>
+
+        <ul class="events__list">
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- Template card -->
+  <template id="templateCard">
+    <li class="events__item">
+      <article class="events__card card">
+        <div class="card__info">
+          <div class="card__header">
+            <div class="card__date">
+              <time datetime="2019-09-14">14</time>
+            </div>
+            <button class="card__add-bookmark" title="Add to bookmarks" type="button" aria-label="Add to bookmarks"></button>
+          </div>
+          <h3 class="card__name">
+            <a class="card__link" href="#">Rave Autumn</a>
+          </h3>
+        </div>
+        <img class="card__img" src="img/1.jpg" alt="Rave Autumn">
+      </article>
+    </li>
+  </template>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
