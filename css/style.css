@@ -139,8 +139,6 @@ html {
 
 .card:hover,
 .card:focus {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
   -webkit-box-shadow: 4px 9px 8px rgb(0, 0, 0, 0.4);
           box-shadow: 4px 9px 8px rgb(0, 0, 0, 0.4);
 }
